@@ -1,0 +1,468 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Black Ops One", system-ui;
+    scroll-behavior: smooth;
+    
+}
+
+p{
+    font-weight: 400;
+    color: #c3c3c3;
+    
+}
+
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+ 
+
+}
+
+
+/* 1) code pour la page home c'est à dire video + title + ecriture */
+
+.title{
+    width: 100%;
+    height: 94.5vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    text-align: center;
+}
+
+.content h1{
+    font-size: 110px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+
+.back-video{
+    position:absolute;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio : 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio : 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+        
+       
+    }
+}
+
+.title .content{
+    max-width: 70%;
+    text-align: center;
+}
+
+/* fin de la mise en page de la premiére partie */
+
+
+/* 2) Code pour la navbar ou le menu au dessus */
+
+
+.header .logo{
+    color: #000;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+    position: relative;
+    float: left;
+    margin-left: 0%;
+   
+}
+
+.logo span{
+    color: #000;
+}
+
+.navbar{
+    display: flex;
+    position: relative; 
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 70px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.btn-jouer{
+    padding: 10px 20px;
+    background: #1E90FF;
+    margin-top: -10px; 
+    text-transform: uppercase;
+}
+
+.btn-jouer:hover{
+    background: #1E90FF;
+    transition: ease-out;
+}
+
+header .navbar li a:hover{
+    color: #1E90FF;
+    border-bottom: 2px solid #1E90FF;
+}
+
+/* fin menu au dessus */
+
+
+
+.banniere .contenu{
+    max-width: 70%;
+    text-align: center;
+}
+
+.banniere .contenu h2{
+    color: #fff;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+
+.contenu p:nth-child(2){
+    color: #ffff;
+    font-size: 1.2em;
+}
+
+.btn1{
+    font-size: 1em;
+    color: #fff;
+    background: #1E90FF;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.btn2{
+    font-size: 1em;
+    color: #fff;
+    background: #214963;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.btn1:hover{
+letter-spacing: 3px;
+}
+
+.btn2:hover{
+    letter-spacing: 4px;
+}
+
+
+section{
+    padding: 100px;
+    background-color: #000;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50{
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .col50 .h2{
+    margin-bottom: 20px;
+}
+
+.titre_texte{
+    color: #c3c3c3;
+    font-size: 2em;
+    font-weight: 400px;
+    text-transform: capitalize;
+}
+
+.titre_texte span{
+    color: #1E90FF;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+
+.row .col50 img{
+    height: 450px;
+    width: 600px;
+    position: relative;
+}
+
+.titre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.Personnages{
+    margin-top: -100px;
+    background-color: #000;
+}
+
+.Personnages .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    color: #111;
+}
+
+.Personnages .contenu .box{
+    width: 350px;
+    margin: 20px;
+    border: 20px solid #fff;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+}
+
+.Personnages .contenu .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 300px;   
+}
+
+.Personnages .contenu .box .imbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.Personnages .contenu .box .text{
+    text-align: center;
+    font-weight: 300px;
+    color: #111;
+}
+
+.Personnages .contenu .box .text h3{
+    font-weight: 400;
+}
+
+.Experts{
+    margin-top:-100px;
+    background-color: #000;
+}
+
+.Experts .contenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.Experts .contenu .box{
+    width: 250px;
+    margin: 20px;
+}
+
+.Experts .contenu .box img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.Experts .contenu .box .text h3{
+    color: #c3c3c3;
+    font-weight: 400;
+    text-align: center;
+}
+
+.Marketing{
+    margin-top:-100px;
+    background-color: #000;
+    background-size: cover;   
+}
+
+.Marketing .contenu{
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+}
+
+/* 7) Contact */
+
+.contact{
+   
+    background-color: #000;
+    background-size: cover;
+   
+    width: 100%;
+    background-position: unset;
+    
+}
+
+.contactform{
+    padding: 75px 50px;
+    background: #282828;
+    box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+    max-width: 500px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    text-align: center;
+}
+
+.contactform .inputboite{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactform h3{
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+
+}
+
+.contactform .inputboite input,
+.contactform .inputboite textarea{
+    width: 100%;
+    border : 1px solid #fff;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300px;
+    resize: none;
+}
+
+.contactform .inputboite input[type="submit"]{
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    background: #1E90FF;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    max-width: 120px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* 8) Copyright */
+
+.copyright{
+    padding: 20px 40px;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    background: rgba(228, 222, 222,);
+    text-align: center;
+}
+ 
+
+.copyright p:nth-child(1){
+    color: #333;
+}
+
+.copyright a{
+    color: #1E90FF;
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.contact .titre-text span{
+    color: #1E90FF;
+    font-size: 2em;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05)
+}
+
+header.sticky .logo{
+    color: #111;
+}
+
+
+header.sticky .navbar li a{
+    color: #000;
+}
+
+header.sticky li a:hover{
+    color: #1E90FF;
+    border-bottom: 2px solid #1E90FF; 
+}
+
+@media (max-width: 991px) {
+    .row .col50 {
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .row{
+        flex-direction: column;
+    }
+}

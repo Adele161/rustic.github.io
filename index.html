@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Micro+5&display=swap" rel="stylesheet"> 
+    <title>Rustic code editor</title>
+</head>
+<body>
+
+
+    <header>
+        <div class= menutoggle onclick="toggleMenu();"></div>
+        <img src ="image/logo2.png" class="logo">
+        <ul class="navbar">
+            <li><a href="#banniere" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#apropos" onclick="toggleMenu();">About us</a></li>
+            <li><a href="#Personnages" onclick="toggleMenu();">The editor</a></li>
+            <li><a href="#experts" onclick="toggleMenu();">The team</a></li>
+            <li><a href="#Marketing" onclick="toggleMenu();">Marketing</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+            <a href="Lien- Google Docs.pdf" class="btn-jouer" onclick="toggleMenu();">Code</a>
+        </ul>     
+    </header>
+
+
+
+<!-- 1)  section -->
+
+
+
+    <div class="title">
+
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="image/videoRustic.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <h1>Rustic</h1>
+            <p>Our new code editor is now available, exclusively for rust fans. This interface will allows you to manipulate a large number of tools, making coding accessible to everyone.</p> 
+        </div>
+
+    </div>
+
+
+
+<!-- 2) About us section -->
+
+ 
+
+    <section class="apropos" id="apropos">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titre_texte"><span>A</span>bout us</h2>
+                <p>Students in their 2nd year at EPITA: school for computer science and advanced techniques, and taking our first steps into the world of IT. Today we're bringing you our new code editor "Rustic", an interactive editor that allows anyone, whether you're a novice or an experimenter, to code rust easily and interactively with your own code.   
+                </p>
+            </div>
+        <div class="col50">
+            <div class="img">
+                <img src="./image/rust logo.jpg" alt="image">
+            </div>  
+        </div>
+    </div>
+</section>
+
+
+
+<!-- 3) Nothing is here right now -->
+
+
+
+<section class="Personnages" id="Personnages">
+    <div class="titre">
+        <h2 class="titre_texte"><span>T</span>he editor</h2>
+    </div>
+    
+        
+    </div>
+ </div>
+ <div class="titre">
+    <a href="#" class="btn1">Voir plus</a>
+ </div>
+</section>
+
+
+
+<!-- 4) Experts section -->
+
+
+
+<section class="Experts" id="experts">
+    <div class="titre">
+        <h2 class="titre_texte">The <span>T</span>eam</h2>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="./image/Ivan.png" alt="">  
+            </div>
+            <div class="text">
+                <h3>Estieu Ivan</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./image/Tom.png" alt="">  
+            </div>
+            <div class="text">
+                <h3>Angles Tom</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./image/Marin.png" alt="">  
+            </div>
+            <div class="text">
+                <h3>Godefroy Marin</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./image/Adelee.png" alt="">  
+            </div>
+            <div class="text">
+                <h3>Cuisenier Adèle</h3>
+            </div>
+        </div>
+    </div>
+ </div>
+</section>
+
+
+
+<!-- 5) Marketing section -->
+
+
+
+<section class="Marketing" id="Marketing">
+    <div class="titre">
+        <h2 class="titre_texte"><span>M</span>arketing</h2>
+    </div>
+    <div class="contenu">
+        <iframe width="760" height="450" src="https://www.youtube.com/embed/etGrPpmd5Tg" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+         clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+    </div>
+</section>
+
+
+
+<!-- 6) Contact section -->
+
+
+
+<section class="contact" id="contact">
+    <div class="titre">
+        <h2 class="titre_texte"><span>C</span>ontact</h2>
+    </div>
+    <div class="contactform">
+        <h3>Feel free to write anything</h3>
+        <form action="https://formsubmit.co/adele.cuisenier@gmail.com" method="POST">
+        <div class="inputboite">
+            <input type="text" placeholder="Name">
+        </div>
+        <div class="inputboite">
+            <input type="text" placeholder="Email">
+        </div>
+        <div class="inputboite">
+            <textarea placeholder="Message"></textarea>
+        </div>
+        <div class="inputboite">
+            <input type="Submit" value="Submit">
+        </div>
+        </form>
+    </div>
+</section>
+
+
+
+<!-- 7) Copyright -->
+
+
+
+<div class="copyright">
+    <p>copyright 2024 <a href="#">Rustic edition 2024</a> WebSite. All right reserved</p>
+</div>
+
+
+
+<!-- 8) Option rolling -->
+
+
+
+<script type="text/javascript">
+    window.addEventListener('scroll',function(){
+        const header =document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0 );
+    });
+    function toggleMenu(){
+        const toggleMenu = document.querySelector('.menutoggle');
+        const navbar = document.querySelector('navbar');
+        menutoggle.classList.toggle('active');
+        navbar.classList.toggle('active');
+    }
+</script>
+
+
+
+<!-- 9) End -->
+
+
+
+</body>
+</html>
+
